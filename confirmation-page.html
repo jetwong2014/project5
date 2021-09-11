@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>confirmation</title>
+    <meta charset="UTF-8">
+    <link href="./front-end/css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4600e15810.js" crossorigin="anonymous"></script>     
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./cart.html">
+                <i class="fas fa-shopping-cart"></i>Cart <span id="cart-icon-number">0</span>
+            </a>
+        </nav>
+        <h1>Order confirmed. Thank you!</h1>
+    </header>
+    
+    <main>
+        <div class="summary-container">
+            <h2>Summary</h2>
+            <table class="user-info-table">
+                <thead>
+                    <tr>
+                        <td class="user-info-title">Customer Info</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td class="user-name"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td class="user-city"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td class="user-address"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td class="user-email"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="product-info-table">
+                <thead>
+                    <tr>
+                        <td>Product</td>
+                        <td>Product Type</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody class="products-info-wrap"></tbody>
+                <tfoot class="products-total-wrap"></tfoot>
+            </table>
+            <p class="order-id">Order ID is </p>
+        </div>
+    </main>
+    <script src="./front-end/js/confirmation.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart</title>
+    <meta charset="UTF-8">
+    <link href="./front-end/css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4600e15810.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>Cart <span id="cart-icon-number">0</span>
+            </a>
+        </nav>
+        <h1>Online shop</h1>
+    </header>
+
+    <main>
+        <div id="cart-products-container" class="cart-products-container">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <td>Product</td>
+                        <td>Product Type</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                        <td>Delete Product</td>
+                    </tr>
+                </thead>
+                <tbody class="products-wrip"></tbody>                
+            </table>
+            <h3 class="products-total"></h3>
+        </div>
+        
+        <div class="form-container">
+            <h2>Customer Info Form</h2>
+           <form id='form1'> 
+               <div class="form-group">
+                   <label for="first-name">
+                       First Name
+                   </label>
+                   <input id="first-name" type="text" required aria-required="true" placeholder=" Jet">
+                   <span class="first-name-error" aria-hidden="true"></span>
+               </div>
+               <div class="form-group">
+                    <label for="last-name">
+                        Last Name
+                    </label>
+                    <input id="last-name" type="text" required aria-required="true" placeholder=" Wong">
+                    <span class="last-name-error" aria-hidden="true"></span>
+                </div>
+                <div class="form-group">
+                    <label for="address">
+                        Address
+                    </label>
+                    <input id="address" type="text" required aria-required="true" placeholder=" 12 Man st">
+                    <span class="address-error" aria-hidden="true"></span>
+                </div>
+                <div class="form-group">
+                    <label for="city">
+                        City
+                    </label>
+                    <input id="city" type="text" required aria-required="true" placeholder=" Hong Kong">
+                    <span class="city-error" aria-hidden="true"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        Email
+                    </label>
+                    <input id="email" type="email" required aria-required="true" placeholder=" 123@example.com">
+                    <span class="email-error" aria-hidden="true"></span>
+                </div>
+                <button class="submit-btn" type="submit" form="form1">
+                    order now
+                </button>
+           </form>
+        </div>          
+    </main>
+    <script src="./front-end/js/cart.js"></script>
+</body>
+</html>
